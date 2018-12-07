@@ -4,7 +4,7 @@ page{
 }
 .theme-box{
 	background: #fff;
-	padding: 20rpx;
+	padding:30rpx 30rpx 0;
 	width: 100%;
 	box-sizing: border-box;
 	display: flex;
@@ -17,13 +17,101 @@ page{
 }
 .theme-title{
 	font-size: 60rpx;
+	line-height: 60rpx;
 }
 .theme-title-text{
 	position: relative;
+	display: inline-block;
+	padding-bottom: 30rpx;
 }
-..theme-title-text::before{
+.theme-title-text::before{
 	position: absolute;
+	display: inline-block;
+	bottom: 0;
+	left: 1em;
+	width: 120rpx;
+	height: 2px;
+	background: #333;
+	content: " ";
+	overflow: hidden;
+
 }
 .theme-explain{
+	font-size: 30rpx;
+	padding: 30rpx 0;
+	display: block;
+}
+.theme-img{
+	width: 690rpx;
+}
+.theme-label{
+	text-align: left;
+	padding:10rpx 0 20rpx;
+}
+.label{
+	font-size: 30rpx;
+	line-height: 60rpx;
+	padding: 0 20rpx;
+	border:1px solid #333;
+	box-sizing: border-box;
+	margin: 10rpx 10rpx 10rpx 0;
+	display: inline-block;
+}
+.theme-label-more{
+	color: #fff;
+	background: #333;
+}
 
+.topic-list{
+	padding: 30rpx 30rpx 0;
+	width: 690rpx;
+}
+.topic-box{
+	margin-bottom: 30rpx;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+}
+.topic-top{
+	font-size: 26rpx;
+	color: #999;
+	padding: 20rpx;
+	
+}
+.topic-member{
+	width: 60rpx;
+	height: 60rpx;
+	border-radius: 100%;
+	vertical-align: middle;
+	margin-right: 10rpx;
+}
+.topic-top text{
+	line-height: 60rpx;
+	display: inline-block;
+}
+.topic-img image{
+	width: 690rpx;
+}
+.topic-title{
+	padding: 30rpx;
+}
+.topic-relevant{
+	padding: 0 30rpx 30rpx;
+	display: flex;
+	justify-content: space-between;
+}
+.topic-relevant-label{
+	font-size: 30rpx;
+	line-height: 50rpx;
+	padding: 0 20rpx;
+	border:1px solid #333;
+	box-sizing: border-box;
+}
+.topic-relevant-operation{
+	display: flex;
+}
+.topic-relevant-operation image{
+	width: 50rpx;
+	height: 50rpx;
+	margin-left: 20rpx;
 }
