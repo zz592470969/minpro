@@ -1,1 +1,29 @@
 /* pages/index/index.wxss */
+page{
+	background: #f0f0f0;
+}
+.theme-box{
+	background: #fff;
+	padding: 20rpx;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.theme-relevant{
+	display: flex;
+	flex-direction: column;
+}
+.theme-title{
+	font-size: 60rpx;
+}
+.theme-title-text{
+	position: relative;
+}
+..theme-title-text::before{
+	position: absolute;
+}
+.theme-explain{
+
+}
