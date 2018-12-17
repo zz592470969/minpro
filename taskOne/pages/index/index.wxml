@@ -1,6 +1,6 @@
 <!--pages/index/index.wxml-->
-<!-- 2018-12-07 -->
-<!-- 1.页面初始建构 -->
+<!-- 2018-12-07 - 1.页面初始建构-->
+<!-- 2018-12-10 - 2.数据初步搭建 -->
 <view class="container">
 	<view class="theme-box">
 		<view class="theme-relevant">

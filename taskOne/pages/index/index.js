@@ -12,7 +12,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var that = this
+    // 通过“request”接口获取数据，成功后返回数据
+    wx.request({
+      url: 'https://easy-mock.com/mock/5bb8c1c63ccc501a316e3ccb/magazine/home',
+      success: function(res) {
+        console.log(res.data);
+        that.setData({
+          recommend:res.data.recommend
+        })
+      }
+    })
   },
 
   /**
