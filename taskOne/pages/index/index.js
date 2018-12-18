@@ -19,7 +19,9 @@ Page({
       success: function(res) {
         console.log(res.data);
         that.setData({
-          recommend:res.data.recommend
+          recommend:res.data.recommend,
+          markType:res.data.markType,
+          articleList:res.data.articleList
         })
       }
     })

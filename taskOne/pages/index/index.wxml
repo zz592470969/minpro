@@ -5,46 +5,46 @@
 	<view class="theme-box">
 		<view class="theme-relevant">
 			<view class="theme-title">
-				<text class="theme-title-text">十月七日</text>
+				<text class="theme-title-text">{{recommend.date}}</text>
 			</view>
-			<text class="theme-explain">点评人见闻：就会觉得和客户看计算机等级空军的会计恒等式</text>
-			<image class="theme-img" src="../../images/recommend-image.png" mode="widthFix"></image>
+			<text class="theme-explain">{{recommend.title}}</text>
+			<image class="theme-img" src="{{recommend.imgSrc}}" mode="widthFix"></image>
 		</view>
 		<view class="theme-label">
 			<text class="label theme-label-more">+</text>
-			<text class="label">女性穿搭</text>
-			<text class="label">男性穿搭</text>
+			<text class="label" wx:for="{{markType}}" wx:key="id">{{item.type}}</text>
+			<!-- <text class="label">男性穿搭</text>
 			<text class="label">心理</text>
 			<text class="label">深度阅读</text>
 			<text class="label">人生整理术</text>
 			<text class="label">读书</text>
-			<text class="label">日韩剧</text>
+			<text class="label">日韩剧</text> -->
 			<text class="label">···</text>
 		</view>
 	</view>
 	<view class="topic-list">
-		<view class="topic-box">
+		<view class="topic-box" wx:for="{{articleList}}" wx:key="typeId">
 			<view class="topic-top">
-				<image class="topic topic-member" src="../../images/avatar.png" mode="scaleToFill"></image>
-				<text>neffy</text>
+				<image class="topic topic-member" src="{{item.markPeopleAvatar}}" mode="scaleToFill"></image>
+				<text>{{item.markPeople}}</text>
 				<text>等</text>
-				<text>22</text>
+				<text>{{item.markCount}}</text>
 				<text>人马克了</text>
 			</view>
 			<view class="topic-img">
-				<image class="" src="../../images/list/1.png" mode="widthFix"></image>
+				<image class="" src="{{item.articleImgSrc}}" mode="widthFix"></image>
 			</view>
 			<view class="topic-title">
-				<text class="">不论之吻？《吻》背后令人惊讶的往事</text>
+				<text class="">{{item.articleTitle}}</text>
 			</view>
 			<view class="topic-relevant">
 				<view class="topic-relevant-label">
-					<text class="">深度阅读</text>
+					<text class="">{{item.articleType}}</text>
 				</view>
 				<view class="topic-relevant-operation">
-					<image class="" src="../../images/icon/Icon_more.png" mode="widthFix"></image>
-					<image class="" src="../../images/icon/Icon_relay.png" mode="widthFix"></image>
-					<image class="" src="../../images/icon/Icon_circle_fill.png" mode="widthFix"></image>
+					<image class="" src="../../image/icon/Icon_more.png" mode="widthFix"></image>
+					<image class="" src="../../image/icon/Icon_relay.png" mode="widthFix"></image>
+					<image class="" src="../../image/icon/Icon_circle_fill.png" mode="widthFix"></image>
 				</view>
 			</view>
 		</view>
